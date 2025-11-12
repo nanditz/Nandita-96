@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contoh Layout dengan Elemen Semantik</title>
+	<style>
+		/* Background utama */
+		body {
+			background: url('WBfqSy.jpg') no-repeat center center/cover;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Efek blur dan transparan di tengah */
+		.container {
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			border-radius: 20px;
+			padding: 40px 60px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			color: white;
+			max-width: 500px;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 10px;
+			color: #00bfff;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 1.1rem;
+			line-height: 1.6;
+			margin: 5px 0;
+		}
+
+		nav {
+			margin-top: 20px;
+		}
+
+		nav a {
+			display: inline-block;
+			margin: 6px;
+			padding: 10px 18px;
+			color: white;
+			background: rgba(0, 191, 255, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 12px;
+			text-decoration: none;
+			font-weight: 500;
+			transition: 0.3s;
+		}
+
+		nav a:hover {
+			background: #00bfff;
+			color: #fff;
+			transform: scale(1.05);
+			box-shadow: 0 0 10px #00bfff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>PROFIL GITHUB</h1>
+			<p><strong>Nama Siswa:</strong>Nandita Rizki Maulana</p>
+			<p><strong>Kelas:</strong> XI TI</p>
+			<p><strong>Proyek:</strong></p>
+		</header>
+
+		<nav>
+			<a href="formating.html">Formating</a>
+			<a href="list.html">List</a>
+			<a href="x3.html">Kata Kataku</a>
+			<a href="table.html">Tabel</a>
+			<a href="nyobo css.html">Nyobo CSS</a>
+			<a href="y.html">Galeri</a>
+		</nav>
+	</div>
+</body>
+</html>
